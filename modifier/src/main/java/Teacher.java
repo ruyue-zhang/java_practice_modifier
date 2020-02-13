@@ -18,4 +18,11 @@ public class Teacher {
     public void setStudent(Student[] student) {
         this.student = student;
     }
+
+    public void printStudent() {
+        for (int i = 0; i < student.length; i++) {
+            System.out.print(student[i].getName() + ":");
+            System.out.println(student[i].getScore());
+        }
+    }
 }
